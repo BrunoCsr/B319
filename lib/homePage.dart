@@ -100,14 +100,14 @@ class _HomePageState extends State<HomePage> {
                       size: 50,
                     ),
                   ),
-                  ElevatedButton(onPressed: (){
-
-                     Navigator.push(
+                  ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
                           context,
-                          MaterialPageRoute(
-                              builder: (context) => MapPage()),
+                          MaterialPageRoute(builder: (context) => MapPage()),
                         );
-                  }, child: Text('Mapa'))
+                      },
+                      child: Text('Mapa'))
                 ],
               ),
             ),
@@ -115,7 +115,7 @@ class _HomePageState extends State<HomePage> {
               child: Container(
                   height: 217,
                   width: double.infinity,
-                 color: Color.fromARGB(255, 247, 211, 188),
+                  color: Color.fromARGB(255, 247, 211, 188),
                   child: Center(
                     child: Padding(
                       padding: const EdgeInsets.all(10.0),
